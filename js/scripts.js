@@ -85,7 +85,7 @@ var tree = {
     for (i = 0; i < Nmax+1; i++) {
       if (!this.findPers(this.peoples[i].indFather)) {
         var newOb = {};
-        newOb.idPers = this.peoples[i].indFather;
+        newOb.idPers = String(this.peoples[i].indFather);
         newOb.fio = "";
         newOb.birthDate = "";
         newOb.deadDate = "";
@@ -98,7 +98,7 @@ var tree = {
       }
       if (!this.findPers(this.peoples[i].indMother)) {
         var newOb = {};
-        newOb.idPers = this.peoples[i].indMother;
+        newOb.idPers = String(this.peoples[i].indMother);
         newOb.fio = "";
         newOb.birthDate = "";
         newOb.deadDate = "";
